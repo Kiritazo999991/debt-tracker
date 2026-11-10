@@ -1,0 +1,40 @@
+# Данные приложения и резервные копии — не отправлять в Git
+data/
+backups/
+*.db
+*.db-wal
+*.db-shm
+*.sqlite
+*.sqlite3
+*.log
+
+# Сборка и готовые бинарники
+build/
+dist/
+*.spec
+*.exe
+*.msi
+*.zip
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+env/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+*.egg-info/
+
+# Редакторы и ОС
+.vscode/
+.idea/
+*.swp
+Thumbs.db
+desktop.ini
+.DS_Store
+
+# Локальные настройки
+.env
+*.local
