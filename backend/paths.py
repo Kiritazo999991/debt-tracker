@@ -3,7 +3,7 @@ import os
 import sys
 
 APP_NAME = "Долги — график платежей"
-VERSION = "1.4.1"
+VERSION = "1.4.2"
 
 
 def base_dir() -> str:

@@ -2,6 +2,7 @@
    ДолгКонтроль — design tokens & base
    ============================================================ */
 :root {
+  color-scheme: dark;
   --bg: #070910;
   --bg-glow-1: rgba(124, 92, 255, 0.18);
   --bg-glow-2: rgba(34, 211, 238, 0.11);
@@ -36,6 +37,7 @@
 }
 
 [data-theme="light"] {
+  color-scheme: light;
   --bg: #eef1f8;
   --bg-glow-1: rgba(124, 92, 255, 0.14);
   --bg-glow-2: rgba(34, 211, 238, 0.12);
@@ -836,7 +838,7 @@ ul { margin: 0; padding: 0; list-style: none; }
   padding: 0 13px;
   border-radius: 12px;
   border: 1px solid var(--border);
-  background: var(--surface);
+  background-color: var(--surface);
   color: var(--text);
   font-size: 13px;
   outline: none;
@@ -1357,7 +1359,7 @@ body.modal-open { overflow: hidden; }
   width: 100%;
   border: 1px solid var(--border);
   border-radius: 12px;
-  background: var(--surface-2);
+  background-color: var(--surface-2);
   color: var(--text);
   font-size: 13px;
   outline: none;
@@ -1369,7 +1371,7 @@ body.modal-open { overflow: hidden; }
 .field input:focus, .field select:focus, .field textarea:focus {
   border-color: rgba(139, 92, 246, 0.6);
   box-shadow: 0 0 0 3px rgba(139, 92, 246, 0.16);
-  background: var(--surface);
+  background-color: var(--surface);
 }
 .field select {
   appearance: none;
@@ -1384,6 +1386,22 @@ body.modal-open { overflow: hidden; }
 }
 [data-theme="dark"] input[type="date"] { color-scheme: dark; }
 [data-theme="light"] input[type="date"] { color-scheme: light; }
+
+[data-theme="dark"] .select option,
+[data-theme="dark"] .field select option {
+  background-color: #0e1320;
+  color: #f1f4fb;
+}
+[data-theme="light"] .select option,
+[data-theme="light"] .field select option {
+  background-color: #ffffff;
+  color: #0e1628;
+}
+.select option:checked,
+.field select option:checked {
+  background-color: var(--accent);
+  color: #ffffff;
+}
 
 .field-hint { font-size: 10.5px; color: var(--dim); line-height: 1.45; }
 .field-error { font-size: 10.5px; color: var(--red); }
